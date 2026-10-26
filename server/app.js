@@ -29,6 +29,11 @@ app.use(cors({ origin: allowedOrigins }));
 app.use(express.json());
 app.use(cookieParser());
 
+// Health check endpoint used by the hosting platform
+app.get('/healthz', (req, res) => {
+  res.status(200).json({ status: 'ok' });
+});
+
 // Mount API routes
 app.use('/api/users', userRoutes);
 app.use('/api/projects', projectRoutes);
