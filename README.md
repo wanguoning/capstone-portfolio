@@ -27,12 +27,13 @@ This capstone project is a production-ready full-stack web application made of t
 
 ## 2. Deployed Links
 
-> The two public URLs below are filled in after deployment to the hosting platforms.
-
 | Part | URL |
 | --- | --- |
-| Live Front-End (React SPA) | `TO BE FILLED AFTER DEPLOYMENT` |
-| Live Back-End (REST API) | `TO BE FILLED AFTER DEPLOYMENT` |
+| Live Front-End (React SPA) | https://capstone-portfolio-azure.vercel.app |
+| Live Back-End (REST API) | https://capstone-portfolio-api.onrender.com |
+
+- Live back-end health check: `https://capstone-portfolio-api.onrender.com/healthz` returns `{"status":"ok"}`.
+- The back-end CORS whitelist allows the live front-end origin listed above.
 
 ---
 
@@ -81,6 +82,7 @@ This capstone project is a production-ready full-stack web application made of t
     ├── vite.config.js
     ├── tailwind.config.js
     ├── postcss.config.js
+    ├── vercel.json                          # SPA rewrite fallback for client-side routes
     └── src/
         ├── main.jsx
         ├── App.jsx
@@ -428,9 +430,9 @@ The seed data contains 4 sample projects, 3 sample blog posts, 3 sample comments
 
 ### 9.4 Post-deployment checklist
 
-- [ ] Both live URLs are recorded in Section 2 of this README.
-- [ ] The deployed front-end talks only to the deployed back-end.
-- [ ] Sample data or the administrator account is available on the deployed database.
+- [x] Both live URLs are recorded in Section 2 of this README.
+- [x] The deployed front-end talks only to the deployed back-end.
+- [x] Sample data or the administrator account is available on the deployed database.
 
 ---
 
