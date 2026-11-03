@@ -29,10 +29,10 @@ This capstone project is a production-ready full-stack web application made of t
 
 | Part | URL |
 | --- | --- |
-| Live Front-End (React SPA) | https://capstone-portfolio-azure.vercel.app |
-| Live Back-End (REST API) | https://capstone-portfolio-api.onrender.com |
+| Live Front-End (React SPA) | https://wanguoning.github.io/capstone-portfolio/ |
+| Live Back-End (REST API) | https://capstone-portfolio-60og.onrender.com |
 
-- Live back-end health check: `https://capstone-portfolio-api.onrender.com/healthz` returns `{"status":"ok"}`.
+- Live back-end health check: `https://capstone-portfolio-60og.onrender.com/healthz` returns `{"status":"ok"}`.
 - The back-end CORS whitelist allows the live front-end origin listed above.
 
 ---
